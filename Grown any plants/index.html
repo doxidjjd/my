@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Your Plant</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #2e7d32;
+      line-height: 1.6;
+    }
+    header {
+      background: #e8f5e9;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #388e3c;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://images.unsplash.com/photo-1582515073490-dc54c1e56ca6') no-repeat center/cover;
+      height: 400px;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2rem;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .card {
+      flex: 1 1 calc(25% - 20px);
+      background: #f1f8e9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Grow Your Own Plants</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#choose">Choose Product</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p>Choose Your Plant to Start Growing!</p>
+</div>
+
+<section class="section" id="choose">
+  <h2>Choose a Product</h2>
+  <div class="cards">
+    <div class="card" onclick="location.href='avocado.html';">
+        <img src="10.jfif" alt="avocado"> 
+      <h3>Avocado</h3>
+      <p>Learn how to grow your own avocado at home!</p>
+    </div>
+<div class="card" onclick="location.href='watermelon.html';">
+      <img src="00.jpg" alt="watermelon">
+      <h3>Watermelon</h3>
+      <p>Grow sweet watermelon in your garden or balcony.</p>
+    </div>
+    <div class="card" onclick="location.href='mandarins.html';">
+      <img src="999.webp" alt="mandarins">
+      <h3>Mandarin</h3>
+      <p>Easy tips to grow juicy mandarins in pots.</p>
+    </div>
+    <div class="card" onclick="location.href='le.html';">
+      <img src="91.webp" alt="Lemon Tree">
+      <h3>Lemon</h3>
+      <p>Fresh homegrown lemons — even indoors!</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p style="text-align: center;">We help you grow fresh fruits and vegetables right at your home easily and naturally.</p>
+</section>
+<footer>
+  <p style="text-align: center; padding: 20px; font-size: 14px; color: #555;">
+    © 2025 Grow Fruit at Home. Created by Bohdan Ivashko. Contact: 
+    <a href="mailto:bodakue@gmail.com" style="color: #388e3c;">bodakue@gmail.com</a>
+  </p>
+</footer>
+
+
+</body>
+</html>

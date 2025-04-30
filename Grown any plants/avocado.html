@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grow Your Own Avocado at Home</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #2e7d32;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background:#e8f5e9;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #388e3c;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #388e3c;
+      transition: width 0.3s;
+      margin: auto;
+    }
+
+    nav a:hover {
+      color: #2e7d32;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://images.unsplash.com/photo-1612636775314-0943e07258ae') no-repeat center/cover;
+      height: 400px;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2rem;
+      animation: zoomHero 3s ease forwards;
+    }
+
+    @keyframes zoomHero {
+      from {
+        transform: scale(1.2);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(33% - 20px);
+      background: #f1f8e9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      animation: slideUp 1s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 5px;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .animated-text {
+      font-size: 36px;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .animated-text:hover {
+      animation: pulse 0.6s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Grow Avocado at Home</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#stages">Stages</a>
+    <a href="#care">Care</a>
+    <a href="#problems">Problems</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p class="animated-text">Grow Your Own Avocado Easily!</p>
+</div>
+
+<section class="section" id="stages">
+  <h2>Stages of Growing Avocado</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="8.jpg" alt="Avocado Seed">
+      <h3>1. Choosing the Right Seed</h3>
+      <p>Select a ripe, healthy avocado. Remove and clean the seed.</p>
+    </div>
+    <div class="card">
+      <img src="1.jfif" alt="Sprouting">
+      <h3>2. Sprouting the Seed</h3>
+      <p>Insert toothpicks and suspend in water until roots and sprout appear.</p>
+    </div>
+    <div class="card">
+      <img src="4.webp" alt="Planting">
+      <h3>3. Planting in Soil</h3>
+      <p>Transfer to a pot once stem grows 15 cm. Plant with half the seed above soil.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="care">
+  <h2>Care Instructions</h2>
+  <ul>
+    <li>Use well-draining soil, rich in organic matter.</li>
+    <li>Keep soil moist but avoid overwatering.</li>
+    <li>Ensure at least 6-8 hours of direct sunlight daily.</li>
+    <li>Fertilize every 2-3 months with balanced fertilizer.</li>
+    <li>Prune occasionally to encourage bushier growth.</li>
+  </ul>
+</section>
+
+<section class="section" id="problems">
+  <h2>Common Problems and Solutions</h2>
+  <ul>
+    <li><strong>Yellowing Leaves:</strong> Likely overwatering. Allow soil to dry slightly between watering.</li>
+    <li><strong>Brown Leaf Tips:</strong> Could indicate salt build-up; flush soil with water.</li>
+    <li><strong>Slow Growth:</strong> Ensure enough sunlight and proper fertilization.</li>
+  </ul>
+</section>
+
+<section class="section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <h3>How long before an avocado tree bears fruit?</h3>
+  <p>Usually 3 to 4 years if grown from a nursery tree, but 5 to 13 years from seed.</p>
+  
+  <h3>Can I grow an avocado indoors?</h3>
+  <p>Yes, but it will need a lot of light and might not produce fruit without hand-pollination.</p>
+  
+  <h3>Do I need two trees for fruit?</h3>
+  <p>Having two trees (Type A and Type B) increases the chances of fruit production, but it's possible with one tree.</p>
+</section>
+
+<footer>
+  <p style="text-align: center; padding: 20px; font-size: 14px; color: #555;">
+    © 2025 Grow Fruit at Home. Created by Bohdan Ivashko. Contact: 
+    <a href="mailto:bodakue@gmail.com" style="color: #388e3c;">bodakue@gmail.com</a>
+  </p>
+</footer>
+
+</body>
+</html>

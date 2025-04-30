@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grow Your Own Lemon Tree at Home</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #2e7d32;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background: #e8f5e9;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 1s ease forwards;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #388e3c;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #388e3c;
+      transition: width 0.3s;
+      margin: auto;
+    }
+
+    nav a:hover {
+      color: #2e7d32;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://images.unsplash.com/photo-1588167056548-6e8c56f94a00') no-repeat center/cover;
+      height: 400px;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2rem;
+      animation: zoomHero 3s ease forwards;
+    }
+
+    @keyframes zoomHero {
+      from { transform: scale(1.2); }
+      to { transform: scale(1); }
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 1 1 calc(33% - 20px);
+      background: #f1f8e9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 5px;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #e8f5e9;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      animation: slideUp 1s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .animated-text {
+      font-size: 36px;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .animated-text:hover {
+      animation: pulse 0.6s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Grow Lemon at Home</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#steps">Steps</a>
+    <a href="#care">Care</a>
+    <a href="#problems">Problems</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <p class="animated-text">Fresh Lemons from Your Balcony!</p>
+</div>
+
+<section class="section" id="steps">
+  <h2>Steps to Grow Lemon</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="111.jpg" alt="Seed Selection">
+      <h3>1. Get Seeds or a Baby Tree</h3>
+      <p>You can start from lemon seeds or buy a grafted sapling from a nursery.</p>
+    </div>
+    <div class="card">
+      <img src="112.jpg" alt="Potting Lemon Tree">
+      <h3>2. Choose the Right Pot</h3>
+      <p>Use a deep container with good drainage holes and citrus-friendly soil.</p>
+    </div>
+    <div class="card">
+      <img src="113.jpg" alt="Growing Lemon Tree">
+      <h3>3. Positioning</h3>
+      <p>Place the pot in a sunny location. Lemons need 8+ hours of sunlight daily.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="care">
+  <h2>Care Tips</h2>
+  <ul>
+    <li>Water deeply once soil dries out slightly, especially in hot weather.</li>
+    <li>Fertilize monthly with a citrus-specific fertilizer.</li>
+    <li>Prune to shape the tree and remove weak branches.</li>
+    <li>Protect from frost by bringing indoors or covering in cold months.</li>
+  </ul>
+</section>
+
+<section class="section" id="problems">
+  <h2>Common Problems and Solutions</h2>
+  <ul>
+    <li><strong>Yellowing Leaves:</strong> Could be iron deficiency. Try chelated iron spray.</li>
+    <li><strong>No Fruit:</strong> Ensure enough sunlight and use phosphorus-rich fertilizer.</li>
+    <li><strong>Leaf Curl:</strong> Often caused by pests; treat with neem oil spray.</li>
+  </ul>
+</section>
+
+<section class="section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <h3>Can lemons grow indoors?</h3>
+  <p>Yes, especially dwarf lemon varieties, as long as they receive enough light.</p>
+
+  <h3>When do lemon trees bear fruit?</h3>
+  <p>Usually within 2-3 years if grown from grafted saplings, longer from seeds.</p>
+
+  <h3>Do I need to pollinate lemon flowers?</h3>
+  <p>If grown indoors without insects, hand-pollination helps improve yield.</p>
+</section>
+
+<footer>
+  <p style="text-align: center; padding: 20px; font-size: 14px; color: #555;">
+    © 2025 Grow Fruit at Home. Created by Bohdan Ivashko. Contact: 
+    <a href="mailto:bodakue@gmail.com" style="color: #388e3c;">bodakue@gmail.com</a>
+  </p>
+</footer>
+
+
+</body>
+</html>
